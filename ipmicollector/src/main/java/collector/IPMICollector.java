@@ -11,7 +11,7 @@ public class IPMICollector {
     //Pre-request ipmitool must be install in the box
 
     // IPMI Unix Command  that gets the content from all sensors  -- (REMOTE)
-    private static final String REMOTE_IPMI = "sudo ipmitool -I lanplus -H 10.16.27.53 -U MAAS_LINC -P 217=R[tVprQ] -L OPERATOR  sdr list full";
+    private static final String REMOTE_IPMI = "sudo ipmitool -I lanplus -H 10.16.27.53 -U <USERNAME>-P <PASSWORD> -L OPERATOR  sdr list full";
     // IPMI Unix Command  that gets the content from all sensors  -- (LOCAL)
     private static final String LOCAL_IPMI = "sudo ipmitool sdr list full";
 
